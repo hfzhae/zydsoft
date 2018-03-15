@@ -40,7 +40,7 @@
         },
 		initcopydate:function(){
 			var now = new Date();
-			$('#copydate').text(now.getFullYear() + '.zydsoft');
+			$('#copydate').text('2000-' + now.getFullYear() + '.zydsoft');
 		},
         initFancyBox: function () {
             $('.fancybox').fancybox();

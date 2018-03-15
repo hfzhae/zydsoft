@@ -153,7 +153,7 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 .buy-section .section-text .like { margin: 0; position: absolute; left: 0; }
 .buy-section .section-text .like .icon { font-size: 46px; color: #fff; }
 .buy-section .buy-text .top-text { text-transform: uppercase; font-size: 22px; color: #fff; }
-.buy-section .buy-text .bottom-text { font-size: 18px; color: #ffe6dd; font-family: 'Playfair Display', serif; /* font-style: italic; */ }
+.buy-section .buy-text .bottom-text { font-size: 18px; color: #ffe6dd; font-family: 'Playfair Display', serif; margin-top:10px; /* font-style: italic; */ }
 
 /******************************/
 /**** SOCIAL SECTION ****/

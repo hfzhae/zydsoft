@@ -35,8 +35,13 @@
             this.initFancyBox();
             // Init fancybox video
             this.initFancyBoxVideo();
+			this.initcopydate();
 
         },
+		initcopydate:function(){
+			var now = new Date();
+			$('#copydate').text(now.getFullYear() + '.zydsoft');
+		},
         initFancyBox: function () {
             $('.fancybox').fancybox();
         },

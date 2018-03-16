@@ -20,25 +20,25 @@
             // Fixed header 
             this.fixedHeader();
             // Progress bar animation
-            this.progressBarAnimation();
+            //this.progressBarAnimation();
             // Wow init
             this.wowInit();
             // Loader
             this.loaderInit();
             // Start video
-            this.startVideo();
+            //this.startVideo();
             // Toggle search
             this.toggleSearch();
             // Top slider init
             this.initSliderPro();
             // Init fancybox
-            this.initFancyBox();
+            //this.initFancyBox();
             // Init fancybox video
-            this.initFancyBoxVideo();
+            //this.initFancyBoxVideo();
 			this.initcopydate();
 
         },
-		initcopydate:function(){
+		initcopydate: function(){
 			var now = new Date();
 			$('#copydate').text('2000-' + now.getFullYear() + '.zydsoft');
 		},

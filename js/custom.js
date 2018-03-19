@@ -1,5 +1,4 @@
 (function () {
-
     "use strict";
     var Core = {
         initialized: false,
@@ -16,7 +15,7 @@
             // Owl carousel init
             this.initOwlCarousel();
             // Stick slider init
-            this.initStickSlider();
+            //this.initStickSlider();
             // Fixed header 
             this.fixedHeader();
             // Progress bar animation
@@ -36,11 +35,103 @@
             // Init fancybox video
             //this.initFancyBoxVideo();
 			this.initcopydate();
-
+			this.initfooter();
+			this.inittopmenu();
         },
+		inittopmenu: function(){
+			var topmenu = $('#navbar-collapse').find('ul'),
+				pagename = window.location.pathname,
+				topmenujson = [
+					{
+						title:'首页',
+						href:'index.html',
+						active:pagename=='/index.html'?'active':''
+					},{
+						title:'产品',
+						href:'#',
+						active:''
+					},{
+						title:'服务',
+						href:'#',
+						active:''
+					},{
+						title:'关于我们',
+						href:'about.html',
+						active:pagename=='/about.html'?'active':''
+					},{
+						title:'联系方式',
+						href:'contact.html',
+						active:pagename=='/contact.html'?'active':''
+					}
+				];
+			topmenu.find('li').remove();
+			for(var i in topmenujson){
+				topmenu.append('<li class="' + topmenujson[i].active + '"><a href="' + topmenujson[i].href + '">' + topmenujson[i].title + '</a></li>');
+			}
+		},
+		initfooter:function(){
+			var footer = $('.footer-section').find('.row');
+			footer.find('div').remove();
+			footer.append('<div class="col-md-3 col-sm-3">' +
+				'<h5>关于我们</h5>' +
+				'<p>我们致力于互联网时代的企业管理软件的研发和推广，向客户提供可参与、可任意配置和裁剪的柔性软件系统，为客户适应电子商务时代的企业管理提供高水平、专业化的软件产品和服务。</p>' +
+			'</div>');
+		
+			footer.append('<div class="col-md-3 col-sm-3">' +
+				'<h5>站内导航</h5>' +
+				'<div class="row">' +
+					'<div class="col-md-6">' +
+						'<ul class="footer-nav">' +
+							'<li><a href="#">关于我们</a></li>' +
+							'<li><a href="#">产品</a></li>' +
+							'<li><a href="#">服务</a></li>' +
+							'<li><a href="#">联系我们</a></li>' +
+						'</ul>' +
+					'</div>' +
+					'<div class="col-md-6">' +
+						'<ul class="footer-nav">' +
+							'<li><a href="#">申请序列号</a></li>' +
+							'<li><a href="#">在线留言</a></li>' +
+							'<li><a href="#">合作伙伴</a></li>' +
+						'</ul>' +
+					'</div>' +
+				'</div>' +
+			'</div>');
+			
+			footer.append('<div class="col-md-3 col-sm-3">' +
+				'<h5>联系方式</h5>' +
+				'<ul class="contacts-list">' +
+					//'<li>' +
+					//	'<p><i class="icon icon-House"></i>北京市朝阳区常营北路10号院</p>' +
+					//'</li>' +
+					'<li>' +
+						'<p><i class="icon icon-Phone2"></i>010 56296718</p>' +
+					'</li>' +
+					'<li>' +
+						'<p><i class="icon icon-Mail"></i><a href="mailto:Services@zydsoft.com">Services@zydsoft.com</a> </p>' +
+					'</li>' +
+				'</ul>' +
+			'</div>');
+			footer.append('<div class="col-md-3 col-sm-3">' +
+				'<h5>免费试用</h5>' +
+				'<p>' +
+					'单用户网络版永久免费使用。' +
+					'通过网络下载方式，安装和使用我们的产品。' +
+				'</p>' +
+				'<div class="form-group has-feedback">' +
+					'<ul class="contacts-list">'+
+						'<li>' +
+							'<p><i class="icon icon-Pencil"></i><a href="#">申请序列号</a></p>' +
+						'</li>' +
+					'</ul>'+
+				'</div>' +
+			'</div>');
+		},
 		initcopydate: function(){
-			var now = new Date();
-			$('#copydate').text('2000-' + now.getFullYear() + '.zydsoft');
+			var now = new Date(),
+				copyright = $('.copyright-section');
+			copyright.find('p').remove();
+			copyright.append('<p>Copyright &copy; 2000-' + now.getFullYear() + '.zydsoft All rights reserved.</p>');
 		},
         initFancyBox: function () {
             $('.fancybox').fancybox();
@@ -238,12 +329,17 @@
             }
         },
         loaderInit: function () {
-            $(window).on('load', function () {
+			var $preloader = $('#page-preloader'),
+				$spinner = $preloader.find('.spinner');
+			$spinner.fadeOut();
+			$preloader.delay(350).fadeOut(800);
+			$('body').show();
+            /* $(window).on('load', function () {
                 var $preloader = $('#page-preloader'),
-                        $spinner = $preloader.find('.spinner');
+					$spinner = $preloader.find('.spinner');
                 $spinner.fadeOut();
                 $preloader.delay(350).fadeOut(800);
-            });
+            }); */
         },
         startVideo: function () {
             if (!Modernizr.touch) {

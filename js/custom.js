@@ -37,7 +37,26 @@
 			this.initcopydate();
 			this.initfooter();
 			this.inittopmenu();
+			this.initbuysection();
         },
+		initbuysection: function(){
+			var baysection = $('.buy-section').find('.row');
+			baysection.find('div').remove();
+			baysection.append('<div class="col-md-8 col-md-offset-1 col-sm-9 wow fadeInLeft">'+
+				'<div class="section-text">'+
+					'<div class=" vcenter like">'+
+						'<span class="icon icon-Briefcase"></span>'+ 
+					'</div>'+
+					'<div class="buy-text vcenter">'+
+						'<div class="top-text">价格和购买方式</div>'+
+						'<div class="bottom-text">根据你的企业情况来决定</div>'+
+					'</div>'+
+				'</div>'+
+			'</div>');
+			baysection.append('<div class="col-md-3 col-sm-3 wow fadeInRight">'+
+				'<a href="#" class="btn btn-info ">现在了解</a>'+
+			'</div>');
+		},
 		inittopmenu: function(){
 			var topmenu = $('#navbar-collapse').find('ul'),
 				pagename = window.location.pathname,

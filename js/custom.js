@@ -71,8 +71,8 @@
 						active:''
 					},{
 						title:'服务',
-						href:'#',
-						active:''
+						href:'services.html',
+						active:pagename=='/services.html'?'active':''
 					},{
 						title:'关于我们',
 						href:'about.html',
@@ -97,7 +97,7 @@
 			'</div>');
 		
 			footer.append('<div class="col-md-3 col-sm-3">' +
-				'<h5>站内导航</h5>' +
+				'<h5>导航</h5>' +
 				'<div class="row">' +
 					'<div class="col-md-6">' +
 						'<ul class="footer-nav">' +
@@ -105,13 +105,15 @@
 							'<li><a href="#">产品</a></li>' +
 							'<li><a href="#">服务</a></li>' +
 							'<li><a href="#">联系我们</a></li>' +
+							'<li><a href="#">合作伙伴</a></li>' +
 						'</ul>' +
 					'</div>' +
 					'<div class="col-md-6">' +
 						'<ul class="footer-nav">' +
 							'<li><a href="#">申请序列号</a></li>' +
 							'<li><a href="#">在线留言</a></li>' +
-							'<li><a href="#">合作伙伴</a></li>' +
+							'<li><a href="#">开启网</a></li>' +
+							'<li><a href="#">iNows</a></li>' +
 						'</ul>' +
 					'</div>' +
 				'</div>' +

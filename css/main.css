@@ -725,7 +725,7 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 .reviews-slider .slide-item .description-block .name { padding: 20px 15px 30px 35px; }
 .reviews-slider .slide-item .description-block .name span { font-size: 14px; color: #333333; text-transform: uppercase; display: inline-block; vertical-align: middle; margin-right: 10px; font-weight: bold; }
 .reviews-slider .slide-item .description-block .review { border: 1px solid #eeeeee; padding: 50px; margin-left: -30px; position: relative; background: #fff; -webkit-box-shadow: 1px 2px 12px 0px rgba(0, 0, 0, 0.08); -moz-box-shadow: 1px 2px 12px 0px rgba(0, 0, 0, 0.08); box-shadow: 1px 2px 12px 0px rgba(0, 0, 0, 0.08); }
-.reviews-slider .slide-item .description-block .review:before { content: ""; width: 40px; height: 34px; display: block; position: absolute; top: -20px; background: url(../img/quotes.png) center no-repeat; right: 50px; }
+.reviews-slider .slide-item .description-block .review:before { content: ""; width: 40px; height: 34px; display: block; position: absolute; top: -20px; background: url(../images/quotes.png) center no-repeat; right: 50px; }
 .reviews-slider .slide-item .description-block .review em { color: #666666; font-size: 16px; line-height: 30px; }
 
 /******  TEAM SLIDER ******/

@@ -67,8 +67,8 @@
 						active:pagename=='/index.html'?'active':''
 					},{
 						title:'产品',
-						href:'#',
-						active:''
+						href:'product.html',
+						active:pagename=='/product.html'?'active':''
 					},{
 						title:'服务',
 						href:'services.html',
@@ -110,6 +110,7 @@
 					'</div>' +
 					'<div class="col-md-6">' +
 						'<ul class="footer-nav">' +
+							'<li><a href="#">下载中心</a></li>' +
 							'<li><a href="#">申请序列号</a></li>' +
 							'<li><a href="#">在线留言</a></li>' +
 							'<li><a href="#">开启网</a></li>' +

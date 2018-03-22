@@ -2,8 +2,12 @@ require(['config'],function(){
 	require(['jquery'], function(){
 		var browser = getExplorerInfo();
 		if(browser != undefined){
-			if(getExplorerInfo().type == 'IE'){   
-			
+			if(browser.type == 'IE'){   
+				if(browser.version<9){
+					alert("你的浏览器版本过低，点击确定后跳转旧版网址。")
+					window.location = "/default.asp"
+					return;	
+				}
 			} else {
 				$('#topheaderIE').hide();
 				$('#topSlider').show();
@@ -41,6 +45,17 @@ require(['config'],function(){
 				var ver=explorer.match(/version\/([\d.]+)/)[1];
 				return {type:"Safari",version:ver};
 			}
+			//ipad
+			else if(explorer.indexOf("ipad") >= 0){
+				var ver=explorer.match(/version\/([\d.]+)/)[1];
+				return {type:"ipad",version:ver};
+			}
+			//iphone
+			else if(explorer.indexOf("iphone") >= 0){
+				var ver=explorer.match(/version\/([\d.]+)/)[1];
+				return {type:"ipad",version:ver};
+			}
+
 		}
 	})
 });

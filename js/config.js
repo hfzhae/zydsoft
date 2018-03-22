@@ -8,7 +8,8 @@ requirejs.config({
 		wow: 'wow.min',
 		owl: 'owl.carousel.min',
 		popper: 'popper.min',
-		bootstrap: 'bootstrap.min'
+		bootstrap: 'bootstrap.min',
+		icon:'icon'
 		
 	},
 	waitSeconds: 15,//设置超时

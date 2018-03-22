@@ -389,7 +389,6 @@
                     autoScaleLayers: false,
                     captionFadeDuration: 100,
 					autoplayDelay:15000
-
                 });
 
             }

@@ -177,7 +177,6 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 .white-footer .copyright-section { background: #fff; }
 .white-footer .copyright-section p { color: #999999; }
 .white-footer .copyright-section p span { color: #cccccc; }
-
 /******************************/
 /**** FOOTER SECTION ****/
 /******************************/
@@ -990,3 +989,5 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 .blue-theme .list-achieve .col-md-3 .achieve-item:after, .blue-theme .latest-works-section .scroll-pane .scroll-content-item .name:before, .blue-theme .plan-item.active, .blue-theme .header .navbar .navbar-nav li.active a, .blue-theme .header .navbar .navbar-nav li a:hover, .blue-theme .design-arrow:after, .blue-theme .news-item .image .read-more:before { border-color: #088cdc; }
 .blue-theme .video-section .btn-play, .blue-theme .plan-item .item-body .list-features li.active:before, .blue-theme .plan-item .item-heading .name, .blue-theme .wrap-section-slider .slide-item .slider-title i, .blue-theme .footer-section .footer-nav li a:hover, .blue-theme .footer-section .footer-nav li.active a, .blue-theme .header .navbar .navbar-nav.wrap-user-control li a { color: #088cdc; }
 .top-logo{margin-left:-32px!important; margin-top:5px!important;}
+.product-menu{color:#333!important; font-weight:bold;}
+.productmenu-section { background: #eeeeee; padding: 20px 0;}

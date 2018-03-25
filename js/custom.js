@@ -110,7 +110,7 @@
 					'</div>' +
 					'<div class="col-md-6">' +
 						'<ul class="footer-nav">' +
-							'<li><a href="#">下载中心</a></li>' +
+							'<li><a href="download.html">下载中心</a></li>' +
 							'<li><a target="_blank" href="http://www.zydsoft.com/buy/">申请序列号</a></li>' +
 							'<li><a target="_blank" href="http://club.zydsoft.com:81/home.asp?bd=1">在线留言</a></li>' +
 							'<li><a target="_blank" href="http://saas.zydsoft.com/">开启网</a></li>' +

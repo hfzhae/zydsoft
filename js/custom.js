@@ -101,10 +101,10 @@
 				'<div class="row">' +
 					'<div class="col-md-6">' +
 						'<ul class="footer-nav">' +
-							'<li><a href="#">关于我们</a></li>' +
-							'<li><a href="#">产品</a></li>' +
-							'<li><a href="#">服务</a></li>' +
-							'<li><a href="#">联系我们</a></li>' +
+							'<li><a href="about.html">关于我们</a></li>' +
+							'<li><a href="product.html">产品</a></li>' +
+							'<li><a href="services.html">服务</a></li>' +
+							'<li><a href="contact.html">联系我们</a></li>' +
 							'<li><a href="#">合作伙伴</a></li>' +
 						'</ul>' +
 					'</div>' +
@@ -113,8 +113,8 @@
 							'<li><a href="#">下载中心</a></li>' +
 							'<li><a href="#">申请序列号</a></li>' +
 							'<li><a href="#">在线留言</a></li>' +
-							'<li><a href="#">开启网</a></li>' +
-							'<li><a href="#">iNows</a></li>' +
+							'<li><a target="_blank" href="http://saas.zydsoft.com/">开启网</a></li>' +
+							'<li><a target="_blank" href="http://www.inows.net/">iNows</a></li>' +
 						'</ul>' +
 					'</div>' +
 				'</div>' +

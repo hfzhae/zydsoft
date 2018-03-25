@@ -127,10 +127,16 @@
 					//	'<p><i class="icon icon-House"></i>北京市朝阳区常营北路10号院</p>' +
 					//'</li>' +
 					'<li>' +
-						'<p><i class="icon icon-Phone2"></i>010 56296718</p>' +
+						'<p><i class="fa fa-phone"></i>010 56296718</p>' +
 					'</li>' +
 					'<li>' +
-						'<p><i class="icon icon-Mail"></i><a href="mailto:Services@zydsoft.com">Services@zydsoft.com</a> </p>' +
+						'<p><i class="fa fa-fax"></i>010 88099488</p>' +
+					'</li>' +
+					'<li>' +
+						'<p><i class="fa fa-envelope"></i><a href="mailto:Services@zydsoft.com">Services@zydsoft.com</a> </p>' +
+					'</li>' +
+					'<li>' +
+						'<p><i class="fa fa-qq"></i><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=454247905&site=qq&menu=yes">454247905</a></p>' +
 					'</li>' +
 				'</ul>' +
 			'</div>');
@@ -143,7 +149,7 @@
 				'<div class="form-group has-feedback">' +
 					'<ul class="contacts-list">'+
 						'<li>' +
-							'<p><i class="icon icon-Pencil"></i><a target="_blank" href="http://www.zydsoft.com/buy/">申请序列号</a></p>' +
+							'<p><i class="fa fa-send"></i><a target="_blank" href="http://www.zydsoft.com/buy/">申请序列号</a></p>' +
 						'</li>' +
 					'</ul>'+
 				'</div>' +

@@ -122,21 +122,21 @@
 			
 			footer.append('<div class="col-md-3 col-sm-3">' +
 				'<h5>联系方式</h5>' +
-				'<ul class="contacts-list">' +
+				'<ul class="footer-nav">' +
 					//'<li>' +
 					//	'<p><i class="icon icon-House"></i>北京市朝阳区常营北路10号院</p>' +
 					//'</li>' +
 					'<li>' +
-						'<p><i class="fa fa-phone"></i>010 56296718</p>' +
+						'<a><i class="fa fa-phone"></i> 010 56296718</a>' +
 					'</li>' +
 					'<li>' +
-						'<p><i class="fa fa-fax"></i>010 88099488</p>' +
+						'<a><i class="fa fa-fax"></i> 010 88099488</a>' +
 					'</li>' +
 					'<li>' +
-						'<p><i class="fa fa-envelope"></i><a href="mailto:Services@zydsoft.com">Services@zydsoft.com</a> </p>' +
+						'<a href="mailto:Services@zydsoft.com"><i class="fa fa-envelope"></i> Services@zydsoft.com</a>' +
 					'</li>' +
 					'<li>' +
-						'<p><i class="fa fa-qq"></i><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=454247905&site=qq&menu=yes">454247905</a></p>' +
+						'<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=454247905&site=qq&menu=yes"><i class="fa fa-qq"></i> 454247905</a>' +
 					'</li>' +
 				'</ul>' +
 			'</div>');
@@ -147,9 +147,9 @@
 					'通过网络下载方式，安装和使用我们的产品。' +
 				'</p>' +
 				'<div class="form-group has-feedback">' +
-					'<ul class="contacts-list">'+
+					'<ul class="footer-nav">'+
 						'<li>' +
-							'<p><i class="fa fa-send"></i><a target="_blank" href="http://www.zydsoft.com/buy/">申请序列号</a></p>' +
+							'<a target="_blank" href="http://www.zydsoft.com/buy/"><i class="fa fa-send"></i> 申请序列号</a>' +
 						'</li>' +
 					'</ul>'+
 				'</div>' +

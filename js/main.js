@@ -9,11 +9,11 @@ require(['config'],function(){
 					return;	
 				}
 			} else {
-				$('#topheaderIE').hide();
-				$('#topSlider').show();
+				//$('#topheaderIE').hide();
+				//$('#topSlider').show();
 			}  
 		}
-		require(['jqueryui','sliderPro', 'wow', 'owl', 'popper', 'bootstrap'], function() {
+		require([/* 'jqueryui','sliderPro', 'wow', 'owl', 'popper', */ 'bootstrap'], function() {
 			require(['custom'], function() {});
 			require(['icon'], function() {});
 		});

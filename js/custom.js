@@ -11,9 +11,9 @@
         },
         build: function () {
             // Dropdown menu
-            this.cotentslide();
+            //this.cotentslide();
             // Owl carousel init
-            this.initOwlCarousel();
+            //this.initOwlCarousel();
             // Stick slider init
             //this.initStickSlider();
             // Fixed header 
@@ -21,7 +21,7 @@
             // Progress bar animation
             //this.progressBarAnimation();
             // Wow init
-            this.wowInit();
+            //this.wowInit();
             // Loader
             this.loaderInit();
             // Start video

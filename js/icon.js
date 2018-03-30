@@ -1,5 +1,5 @@
 try{
-	var sheet=document.styleSheets[1],
+	var sheet=document.styleSheets[2],
 		rules=sheet.cssRules;
 	for(sy in rules){
 		if(rules[sy].cssText.indexOf('::')>0){
@@ -16,7 +16,7 @@ try{
 }catch(e){}
 
 try{
-	var sheet=document.styleSheets[2],
+	var sheet=document.styleSheets[0],
 		rules=sheet.cssRules;
 	for(sy in rules){
 		if(rules[sy].cssText.indexOf(':before')>0){

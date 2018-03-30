@@ -38,14 +38,55 @@
 			this.initfooter();
 			this.inittopmenu();
 			this.initbuysection();
+			this.initachievements();
         },
+		initachievements: function(){
+			var avsection = $('.achievements-section').find('.row');
+			avsection.find('div').remove();
+			avsection.append('<div class="col-md-3 col-sm-3 col-xs-6">'+
+				'<article>'+
+					'<div class="achieve-item">'+
+						'<div class="achieve-icon">'+
+							'<span class="fa fa-institution"></span>'+
+						'</div>'+
+					'</div>'+
+				'</article>'+
+			'</div>'+
+			'<div class="col-md-3 col-sm-3 col-xs-6">'+
+				'<article>'+
+					'<div class="achieve-item">'+
+						'<div class="achieve-icon">'+
+							'<span class="fa fa-trophy"></span>'+
+						'</div>'+
+					'</div>'+
+				'</article>'+
+			'</div>'+
+			'<div class="col-md-3 col-sm-3 col-xs-6">'+
+				'<article>'+
+					'<div class="achieve-item">'+
+						'<div class="achieve-icon">'+
+							'<span class="fa fa-thumbs-o-up"></span>'+
+						'</div>'+
+					'</div>'+
+				'</article>'+
+			'</div>'+
+			'<div class="col-md-3 col-sm-3 col-xs-6">'+
+				'<article>'+
+					'<div class="achieve-item">'+
+						'<div class="achieve-icon">'+
+							'<span class="fa fa-group"></span>'+
+						'</div>'+
+					'</div>'+
+				'</article>'+
+			'</div>');
+		},
 		initbuysection: function(){
 			var baysection = $('.buy-section').find('.row');
 			baysection.find('div').remove();
 			baysection.append('<div class="col-md-8 col-md-offset-1 col-sm-9 wow fadeInLeft">'+
 				'<div class="section-text">'+
 					'<div class=" vcenter like">'+
-						'<span class="icon icon-Briefcase"></span>'+ 
+						'<span class="fa fa-briefcase"></span>'+ 
 					'</div>'+
 					'<div class="buy-text vcenter">'+
 						'<div class="top-text">价格和购买方式</div>'+

@@ -22,7 +22,7 @@ requirejs.config({
 		bootstrap:{ 
 			deps:[
 				'css!../css/font-awesome.min.css',
-				'css!../css/style.css',
+				//'css!../css/style.css',
 				'css!../css/bootstrap.min.css',
 				//'css!../css/slider-pro.min.css',
 				//'css!../css/owl.carousel.css',

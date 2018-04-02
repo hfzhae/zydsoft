@@ -47,15 +47,19 @@ require(['config'],function(){
 			}
 			//ipad
 			else if(explorer.indexOf("ipad") >= 0){
-				var ver=explorer.match(/version\/([\d.]+)/)[1];
+				var ver=explorer.match(/mozilla\/([\d.]+)/)[1];
 				return {type:"ipad",version:ver};
 			}
 			//iphone
 			else if(explorer.indexOf("iphone") >= 0){
-				var ver=explorer.match(/version\/([\d.]+)/)[1];
+				var ver=explorer.match(/mozilla\/([\d.]+)/)[1];
 				return {type:"ipad",version:ver};
 			}
-
+			//android
+			else if(explorer.indexOf("android") >= 0){
+				var ver=explorer.match(/mozilla\/([\d.]+)/)[1];
+				return {type:"android",version:ver};
+			}
 		}
 	})
 });

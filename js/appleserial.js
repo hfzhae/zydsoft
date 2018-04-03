@@ -27,7 +27,7 @@ function getSerial(t, o, title, k){
 			$('#applyLabel').text(title);
 			$('#serialinfo').text('');
 			$('#serialinfo').append(serialinfo);
-			$('.modal-body').find('input').val(serial);
+			$('#Serialinput').val(serial);
 			$('.modal-body').find('.fa').removeClass('fa-check');
 			$('.modal-body').find('.fa').removeClass('fa-warning');
 			$('.modal-body').find('.fa').addClass(serialicon);

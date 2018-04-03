@@ -9,7 +9,8 @@ requirejs.config({
 		//owl: 'owl.carousel.min',
 		//popper: 'popper.min',
 		bootstrap: 'bootstrap.min',
-		icon:'icon'
+		icon:'icon',
+		appleserial:'appleserial'
 		
 	},
 	waitSeconds: 15,//设置超时

@@ -233,6 +233,7 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 .top-header.countact-us-header { background: url(../images/sections/bg.jpg) top center no-repeat; background-size: cover; }
 .top-header.download-us-header { background: url(../images/sections/section-11.jpg) top center no-repeat; background-size: cover; }
 .top-header.portfolio-header { background: url(../images/sections/section-7.jpg) top center no-repeat; background-size: cover; }
+.top-header.applyserial-header { background: url(../images/sections/bg2.jpg) top center no-repeat; background-size: cover; }
 .top-header.home-header { min-height: 551px; }
 .top-header .header-container { position: relative; z-index: 2; }
 .top-header .header-container .header-title { text-align: center; padding-top: 185px; padding-bottom: 30px; }
@@ -992,3 +993,6 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 .top-logo{margin-left:-32px!important; margin-top:5px!important;}
 .product-menu{color:#333!important; font-weight:bold;}
 .productmenu-section { background: #eeeeee; padding: 20px 0;}
+.serialinput{border:1px solid #ccc!important;border-radius:3px;color:#555;font-size:20px;text-align:center;background-color:#eee;}
+.serialcode{border:1px solid #ccc!important;border-radius:3px;color:#555;font-size:20px;text-align:center;height:40px;}
+.serialinfo{font-size:20px; margin:10px;}

@@ -190,7 +190,7 @@
 				'<div class="form-group has-feedback">' +
 					'<ul class="footer-nav">'+
 						'<li>' +
-							'<a target="_blank" href="http://www.zydsoft.com/buy/"><i class="fa fa-send"></i> 申请序列号</a>' +
+							'<a href="applyserial.html"><i class="fa fa-send"></i> 申请序列号</a>' +
 						'</li>' +
 					'</ul>'+
 				'</div>' +

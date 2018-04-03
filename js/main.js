@@ -14,8 +14,7 @@ require(['config'],function(){
 			}  
 		}
 		require([/* 'jqueryui','sliderPro', 'wow', 'owl', 'popper', */ 'bootstrap'], function() {
-			require(['custom'], function() {});
-			require(['icon'], function() {});
+			require(['custom','icon','appleserial'], function() {});
 		});
 		
 		function getExplorerInfo() {
@@ -57,6 +56,7 @@ require(['config'],function(){
 			}
 			//android
 			else if(explorer.indexOf("android") >= 0){
+				window.location = "http://zydsoft.com"
 				var ver=explorer.match(/mozilla\/([\d.]+)/)[1];
 				return {type:"android",version:ver};
 			}

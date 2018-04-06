@@ -1,9 +1,9 @@
 $('#get2000').on('click', function(){
-	getSerial(2, this, 'e商2000服务器版');
+	getSerial(19, this, 'e商2000');
 })
 
 $('#get3000').on('click', function(){
-	getSerial(3, this, 'e商3000服务器版');
+	getSerial(1, this, 'e商3000');
 })
 
 function getSerial(t, o, title, k){
@@ -13,21 +13,30 @@ function getSerial(t, o, title, k){
 		if(result){
 			var serial, serialinfo, serialicon, serialcolor;
 			if(result.result){
-				serial = result.serial
-				localStorage.serial = serial;
+				localStorage.serial = title + ':' + result.serial + ',' + localStorage.serial;
 				serialinfo = '<div style="margin:30px;">恭喜！<br><br>您获得了一个新的'+title+'序列号。请在注册时使用它。有任何问题请及时 <a target="_blank" href="contact.html">联系我们</a>。</div>'
 				serialicon = 'fa-check';
 				serialcolor = '#398439';
 			}else{
-				serial = localStorage.serial;
-				serialinfo = '<div style="margin:30px;">今天已经申请过了，请明天再来吧。以下是今天获取的'+title+'序列号。请在注册时使用它。有任何问题请及时 <a target="_blank" href="contact.html">联系我们</a>。<br><br><a id="reapplybtn" class="btn btn-default" style="padding:9px;padding-left:15px;padding-right:15px;font-size:14px;">还需要继续申请</a></div>';
+				serialinfo = '<div style="margin:30px;">' + result.msg + '有任何问题请及时 <a target="_blank" href="contact.html">联系我们</a>。<br><br><a id="reapplybtn" class="btn btn-default" style="padding:9px;padding-left:15px;padding-right:15px;font-size:14px;">还需要继续申请</a></div>';
 				serialicon = 'fa-warning';
 				serialcolor = '#f0ad4e';
 			}
-			$('#applyLabel').text(title);
+			//$('#applyLabel').text('序列号');
 			$('#serialinfo').text('');
 			$('#serialinfo').append(serialinfo);
-			$('#Serialinput').val(serial);
+			//$('#Serialinput').val(serial);
+			
+			var serialArr = localStorage.serial.split(',');
+			$('#SerialinputList').find('div').remove();
+			for(var s in serialArr){
+				if(serialArr[s] != 'undefined'){
+					$('#SerialinputList').append('<div class="input-group" style="margin-bottom:3px;">'+
+						'<span class="input-group-addon">'+serialArr[s].split(':')[0]+'</span>'+
+						'<input type="text" onfocus="select()" class="form-control serialinput" placeholder="Serial" aria-describedby="basic-addon1" value="'+serialArr[s].split(':')[1]+'">'+
+					'</div>');
+				}
+			}
 			$('.modal-body').find('.fa').removeClass('fa-check');
 			$('.modal-body').find('.fa').removeClass('fa-warning');
 			$('.modal-body').find('.fa').addClass(serialicon);

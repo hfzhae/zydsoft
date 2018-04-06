@@ -993,6 +993,6 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 .top-logo{margin-left:-32px!important; margin-top:5px!important;}
 .product-menu{color:#333!important; font-weight:bold;}
 .productmenu-section { background: #eeeeee; padding: 20px 0;}
-.serialinput{border:1px solid #ccc!important;border-radius:3px;color:#555;font-size:20px;text-align:center;background-color:#eee;}
+.serialinput{border:1px solid #ccc!important;border-radius:3px;color:#555;font-size:20px;background-color:#eee;}
 .serialcode{border:1px solid #ccc!important;border-radius:3px;color:#555;font-size:20px;text-align:center;height:40px;}
 .serialinfo{font-size:20px; margin:10px;}

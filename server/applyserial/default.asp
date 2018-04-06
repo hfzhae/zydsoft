@@ -23,7 +23,7 @@ function getSerial()
 		rsIP.open sql, conn, 3, 3, 1
 		
 		if not rsIP.eof and not key="1336633290" then
-			msg = "This IP address has been applied today."
+			msg = "今天已经申请过了。"
 		else
 			rsIP.addnew
 			rsIP("IP") = UserIP

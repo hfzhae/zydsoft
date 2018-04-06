@@ -3,7 +3,7 @@
 
 dim conn, Device
 
-Device = netbox.mapPath("\zydsoft\server\database\") & "applyserial.mdb"
+Device = server.mapPath("\server\database") & "\applyserial.mdb"
 'GetConnEx()
 
 Function JetOLEDBConnecter(DatabaseName, UserName, Password)

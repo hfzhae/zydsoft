@@ -7,7 +7,7 @@ key = SQLInputParam(request("key"))
 result = 0
 serial = ""
 msg = ""
-UserIP = Request.ServerVariables("HTTP_X_FORWARDED_FOR") 
+UserIP = Request.ServerVariables("HTTP_X_FORWARDED_FOR") '穿透代理服务器获取IP
 if UserIP = "" then UserIP = Request.ServerVariables("REMOTE_ADDR")
 
 getSerial()
@@ -47,6 +47,4 @@ function getSerial()
 		end if
 	end if
 end function
-
-%>
-{"result":<%=result%>,"serial":"<%=serial%>","msg":"<%=msg%>"}
+%>{"result":<%=result%>,"serial":"<%=serial%>","msg":"<%=msg%>"}

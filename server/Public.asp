@@ -1,14 +1,5 @@
-﻿<%'Option Explicit
- 
-
-dim conn, Device
-
-Device = server.mapPath("\server\database") & "\applyserial.mdb"
-'response.write server.MapPath("\wwwroot\eng\data\") & "database.mdb"
-
-'Device = netbox.mapPath("\wwwroot\eng\data\") & "database.mdb"
-'Device = server.mapPath("\wwwroot\eng\data\") & "database.mdb"
-'GetConnEx()
+﻿<%Option Explicit
+dim conn
 
 Function JetOLEDBConnecter(DatabaseName, UserName, Password)
 	Dim CnObj
@@ -24,7 +15,8 @@ Function JetOLEDBConnecter(DatabaseName, UserName, Password)
 End Function
 
 function GetConnEx()
-	dim  connstr
+	dim  connstr, Device
+	Device = server.mapPath("\server\database") & "\applyserial.mdb"
 	connstr =JetOLEDBConnecter(Device, "admin", "")
 	set Conn =CreateObject("adodb.connection")
 	Conn.Open connstr

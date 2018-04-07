@@ -95,7 +95,7 @@
 				'</div>'+
 			'</div>');
 			baysection.append('<div class="col-md-3 col-sm-3 wow fadeInRight">'+
-				'<a href="#" class="btn btn-info ">现在了解</a>'+
+				'<a href="offer.html" class="btn btn-info ">现在了解</a>'+
 			'</div>');
 		},
 		inittopmenu: function(){

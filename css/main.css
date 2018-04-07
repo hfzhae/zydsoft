@@ -231,6 +231,7 @@ body.fixed-header .scrolling-header .navbar .wrap-inside-nav { /*top: 64px;*/ }
 /*************************/
 .top-header { background: url(../images/sections/section-10.jpg) top center no-repeat; background-size: cover; min-height: 475px; }
 .top-header.countact-us-header { background: url(../images/sections/bg.jpg) top center no-repeat; background-size: cover; }
+.top-header.offer-header { background: url(../images/sections/section-6.jpg) top center no-repeat; background-size: cover; }
 .top-header.download-us-header { background: url(../images/sections/section-11.jpg) top center no-repeat; background-size: cover; }
 .top-header.portfolio-header { background: url(../images/sections/section-7.jpg) top center no-repeat; background-size: cover; }
 .top-header.applyserial-header { background: url(../images/sections/bg2.jpg) top center no-repeat; background-size: cover; }

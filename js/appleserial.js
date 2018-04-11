@@ -8,7 +8,6 @@ $('#get3000').on('click', function(){
 
 $('#getCount').on('click', function(){
 	$.getJSON('server/applyserial/count.asp', function(result){
-		console.log(result);
 		var a = $('<span>' + result.msg + '</span>');
 		$('#countvinfo').find('span').remove();
 		$('#countvinfo').append(a);

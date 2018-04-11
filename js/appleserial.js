@@ -18,7 +18,7 @@ function getSerial(t, o, title, k){
 				serialicon = 'fa-check';
 				serialcolor = '#398439';
 			}else{
-				serialinfo = '<div style="margin:30px;">' + result.msg + '有任何问题请及时 <a target="_blank" href="contact.html">联系我们</a>。<br><br><a id="reapplybtn" class="btn btn-default" style="padding:9px;padding-left:15px;padding-right:15px;font-size:14px;">还需要继续申请</a></div>';
+				serialinfo = '<div style="margin:30px;">' + unescape(result.msg) + '有任何问题请及时 <a target="_blank" href="contact.html">联系我们</a>。<br><br><a id="reapplybtn" class="btn btn-default" style="padding:9px;padding-left:15px;padding-right:15px;font-size:14px;">还需要继续申请</a></div>';
 				serialicon = 'fa-warning';
 				serialcolor = '#f0ad4e';
 			}
@@ -27,14 +27,16 @@ function getSerial(t, o, title, k){
 			$('#serialinfo').append(serialinfo);
 			//$('#Serialinput').val(serial);
 			
-			var serialArr = localStorage.serial.split(',');
-			$('#SerialinputList').find('div').remove();
-			for(var s in serialArr){
-				if(serialArr[s] != 'undefined'){
-					$('#SerialinputList').append('<div class="input-group" style="margin-bottom:3px;">'+
-						'<span class="input-group-addon">'+serialArr[s].split(':')[0]+'</span>'+
-						'<input type="text" onfocus="select()" class="form-control serialinput" placeholder="Serial" aria-describedby="basic-addon1" value="'+serialArr[s].split(':')[1]+'">'+
-					'</div>');
+			if(localStorage.serial != undefined){
+				var serialArr = localStorage.serial.split(',');
+				$('#SerialinputList').find('div').remove();
+				for(var s in serialArr){
+					if(serialArr[s] != 'undefined'){
+						$('#SerialinputList').append('<div class="input-group" style="margin-bottom:3px;">'+
+							'<span class="input-group-addon">'+serialArr[s].split(':')[0]+'</span>'+
+							'<input type="text" onfocus="select()" class="form-control serialinput" placeholder="Serial" aria-describedby="basic-addon1" value="'+serialArr[s].split(':')[1]+'">'+
+						'</div>');
+					}
 				}
 			}
 			$('.modal-body').find('.fa').removeClass('fa-check');

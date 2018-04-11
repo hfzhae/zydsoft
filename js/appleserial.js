@@ -6,6 +6,15 @@ $('#get3000').on('click', function(){
 	getSerial(1, this, 'e商3000');
 })
 
+$('#getCount').on('click', function(){
+	$.getJSON('server/applyserial/count.asp', function(result){
+		console.log(result);
+		var a = $('<span>' + result.msg + '</span>');
+		$('#countvinfo').find('span').remove();
+		$('#countvinfo').append(a);
+	});
+})
+
 function getSerial(t, o, title, k){
 	var btn = $(o),
 		param = {type: t, key: k};

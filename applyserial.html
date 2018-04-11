@@ -82,7 +82,7 @@
 								<button class="btn btn-success" id="get2000" data-toggle="modal" data-target="#serialmodal" style="margin:10px"><i class="fa marginicon fa-check" style="font-size:20px;text-transform:none;"> 申请e商2000序列号</i></button><br>
 								<button class="btn btn-success" id="get3000" data-toggle="modal" data-target="#serialmodal" style="margin:10px"><i class="fa marginicon fa-check" style="font-size:20px;text-transform:none;"> 申请e商3000序列号<div class="text-center" style="font-size:12px; margin:5px;">单用户永久免费，无需申请</div></i></button><br>
 								<a class="btn btn-warning" style="margin:10px" href="download.html"><i class="fa marginicon fa-download" style="font-size:20px;text-transform:none;"> 点击进入下载中心</i></a><br>
-								<a target="_blank" href="server/applyserial/count.asp">　</a>
+								<a id="getCount" href="#" data-toggle="modal" data-target="#countview">　</a>
 							</div>
 							<div class="modal fade" id="serialmodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 								<div class="modal-dialog" role="document">
@@ -94,6 +94,22 @@
 										<div class="modal-body text-center">
 											<span class="fa fa-check" style="font-size:60px;color:#398439; margin:10px; margin-bottom:0px;"></span>
 											<div class="serialinfo" id="serialinfo">
+											</div>
+											<form id="SerialinputList"></form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade bs-example-modal-sm" id="countview" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+								<div class="modal-dialog modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											<h4 class="modal-title text-center" id="applyLabel">Allowance</h4>
+										</div>
+										<div class="modal-body text-center">
+											<span class="fa fa-battery-2" style="font-size:60px;color:#398439; margin:10px; margin-bottom:0px;"></span>
+											<div class="serialinfo" id="countvinfo">
 											</div>
 											<form id="SerialinputList"></form>
 										</div>

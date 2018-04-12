@@ -1,5 +1,5 @@
 $('#getVersion3000').on('click', function(){
-	var param = {v: '2.24,2.23,2.22,2.21', pid: 2};
+	var param = {v: '2.25,2.24,2.23,2.22,2.21', pid: 2};
 	$.getJSON('server/download/getversion/default.asp?jsoncallback=?', param, function(result){
 		var list = result.list;
 		if(list.length > 0){

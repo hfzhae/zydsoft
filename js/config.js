@@ -10,7 +10,8 @@ requirejs.config({
 		//popper: 'popper.min',
 		bootstrap: 'bootstrap.min',
 		icon:'icon',
-		appleserial:'appleserial'
+		appleserial:'appleserial',
+		download:'download'
 		
 	},
 	waitSeconds: 15,//设置超时

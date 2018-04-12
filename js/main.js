@@ -14,7 +14,7 @@ require(['config'],function(){
 			}  
 		}
 		require([/* 'jqueryui','sliderPro', 'wow', 'owl', 'popper', */ 'bootstrap'], function() {
-			require(['custom','icon','appleserial'], function() {});
+			require(['custom','icon','appleserial','download'], function() {});
 		});
 		
 		function getExplorerInfo() {

@@ -3,6 +3,7 @@ $('#getVersion3000').on('click', function(){
 	$.getJSON('server/download/getversion/default.asp?jsoncallback=?', param, function(result){
 		var list = result.list;
 		if(list.length > 0){
+			$('#updateinfo3000').find('tbody').find('tr').remove();
 			for(var i in list){
 				$('#updateinfo3000').find('tbody').append('<tr>'+
 					'<th>' + list[i].version + '</th>'+
@@ -19,6 +20,7 @@ $('#getVersion3000pos').on('click', function(){
 	$.getJSON('server/download/getversion/default.asp?jsoncallback=?', param, function(result){
 		var list = result.list;
 		if(list.length > 0){
+			$('#updateinfo3000pos').find('tbody').find('tr').remove();
 			for(var i in list){
 				$('#updateinfo3000pos').find('tbody').append('<tr>'+
 					'<th>' + list[i].version + '</th>'+

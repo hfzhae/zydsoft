@@ -1,4 +1,4 @@
-﻿<%'Option Explicit
+﻿<%Option Explicit
 dim conn
 
 Function JetOLEDBConnecter(DatabaseName, UserName, Password)

@@ -5,7 +5,7 @@ require(['config'],function(){
 			if(browser.type == 'IE'){   
 				if(browser.version<9){
 					alert("你的浏览器版本过低，点击确定后跳转旧版网址。")
-					window.location = "/default.asp"
+					window.location = "http://old.zydsoft.com"
 					return;	
 				}
 			} else {

@@ -43,6 +43,6 @@ end sub
 
 function getConn()
 	Set connsql=Server.CreateObject("adodb.connection")
-	connsql.Open = "driver={SQL Server};server=39.104.115.200,2500; uid=ebsvr;pwd=zydsvr=888;database=ebDevDoc"
+	connsql.Open = "driver={SQL Server};server=.; uid=ebsvr;pwd=zydsvr=888;database=ebDevDoc"
 end function
 %><%=callback %>({"result":"<%=result %>","list":[<%=list %>],"msg":"<%=msg %>"})
